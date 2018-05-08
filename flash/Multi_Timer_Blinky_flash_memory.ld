@@ -1,0 +1,26 @@
+/*
+ * GENERATED FILE - DO NOT EDIT
+ * (c) Code Red Technologies Ltd, 2008-2013
+ * (c) NXP Semiconductors 2013-2018
+ * Generated linker script file for LPC845
+ * Created from memory.ldt by FMCreateLinkMemory
+ * Using Freemarker v2.3.23
+ * MCUXpresso IDE v10.1.1 [Build 606] [2018-01-02]  on May 7, 2018 6:54:36 PM
+ */
+
+MEMORY
+{
+  /* Define each memory region */
+  MFlash64 (rx) : ORIGIN = 0x0, LENGTH = 0x10000 /* 64K bytes (alias Flash) */  
+  RamLoc16 (rwx) : ORIGIN = 0x10000000, LENGTH = 0x4000 /* 16K bytes (alias RAM) */  
+}
+
+  /* Define a symbol for the top of each memory region */
+  __base_MFlash64 = 0x0  ; /* MFlash64 */  
+  __base_Flash = 0x0 ; /* Flash */  
+  __top_MFlash64 = 0x0 + 0x10000 ; /* 64K bytes */  
+  __top_Flash = 0x0 + 0x10000 ; /* 64K bytes */  
+  __base_RamLoc16 = 0x10000000  ; /* RamLoc16 */  
+  __base_RAM = 0x10000000 ; /* RAM */  
+  __top_RamLoc16 = 0x10000000 + 0x4000 ; /* 16K bytes */  
+  __top_RAM = 0x10000000 + 0x4000 ; /* 16K bytes */  
